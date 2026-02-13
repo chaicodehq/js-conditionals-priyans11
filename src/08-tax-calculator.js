@@ -27,4 +27,24 @@
  */
 export function calculateTax(income) {
   // Your code here
+  if(income==0 || income<0)
+  {
+    return 0;
+  }
+  else if(income<10000)
+  {
+    return income*0/100;
+  }
+  else if(income>=10001 && income<30000)
+  {
+    return income*10/100
+  }
+  else if(income>=30001 && income<70000)
+  {
+    return income*20/100
+  }
+  else if(income>=70001)
+  {
+    return income*30/100
+  }
 }
